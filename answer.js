@@ -55,16 +55,15 @@ console.log("Ready to begin.");
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+let array2 = ['potato','carrot','onion','leek','cabbage'];
+let result = array2[1];
 
+console.log(result);
 
-
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = result;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.1", ANSWER, false);
+dbwebb.assert("1.1", ANSWER, true);
 
 /**
  * Exercise 1.2 (1 points)
@@ -76,13 +75,12 @@ dbwebb.assert("1.1", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+array2 = ['potato','carrot','onion','leek','cabbage'];
+let answer = array2[0] + '-' + array2[array2.length -1];
 
+console.log(answer);
 
-
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = answer;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.2", ANSWER, false);
@@ -99,13 +97,15 @@ dbwebb.assert("1.2", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+let array1 = [47, 98, -13, 0, -412, 499, 3, 1200];
+array2 = ['potato', 'carrot', 'onion', 'leek', 'cabbage'];
 
+let array3 = array1.concat(array2);
+let c = array3;
 
+console.log(c);
 
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = c;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.3", ANSWER, false);
@@ -123,16 +123,14 @@ dbwebb.assert("1.3", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+const array21 = ['potato', 'carrot', 'onion', 'leek', 'cabbage'];
+array21.sort(),
+console.log(array21)
 
-
-
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = array21;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.4", ANSWER, false);
+dbwebb.assert("1.4", ANSWER, true);
 
 /**
  * Exercise 1.5 (1 points)
@@ -145,13 +143,12 @@ dbwebb.assert("1.4", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+const array11 = [47, 98, -13, 0, -412, 499, 3, 1200];
+const sortedarray11 = array11.toSorted((a, b) => a - b);
 
+console.log(sortedarray11); // ascendant
 
-
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = sortedarray11;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.5", ANSWER, false);
