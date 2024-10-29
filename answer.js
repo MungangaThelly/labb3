@@ -124,7 +124,7 @@ dbwebb.assert("1.3", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 const array21 = ['potato', 'carrot', 'onion', 'leek', 'cabbage'];
-array21.sort(),
+answer = array21.sort(),
 console.log(array21)
 
 ANSWER = array21;
@@ -165,10 +165,13 @@ dbwebb.assert("1.5", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+function upper(string) {
+    return string.toUpperCase()
+}
 
-
-
-
+let array22 = array2.map(upper)
+ANSWER = array22
+console.log(array22);
 
 ANSWER = "Replace this text with the variable holding the answer.";
 
@@ -186,10 +189,12 @@ dbwebb.assert("1.6", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
-
-
-
-
+function getPositiveNumber(value) {
+    return value > 0
+}
+let array12 = array1.filter(getPositiveNumber)
+ANSWER = array1
+console.log(ANSWER)
 
 
 ANSWER = "Replace this text with the variable holding the answer.";
@@ -209,8 +214,17 @@ dbwebb.assert("1.7", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+function arrayAverage(array1) {
+    let total = 0
+    for ( let i = 0; i < array1.length; i ++) {
+        total += array[i];
+    }
+    let avg = total / array1.length
+    return Math.round(avg)
+}
 
-
+ANSWER = array1Average(array1)
+console.log(ANSWER);
 
 
 
@@ -240,6 +254,15 @@ dbwebb.assert("1.8", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+let  myArray = array1.slice()
+let last = myArray.pop()
+let first = myArray.shisft()
+myArray.push(first)
+myArray.unshift(last)
+
+ANSWER = myArray
+
+console.log(ANSWER);
 
 
 
@@ -261,7 +284,11 @@ dbwebb.assert("2.1", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+myArray.splice(2, 1, false)
+myArraysplice(3, 1, false)
 
+ANSWER = myArray
+console.log(ANSWER)
 
 
 
@@ -280,7 +307,10 @@ dbwebb.assert("2.2", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+myArray.splice(3, 2, 'MEGA')
 
+ANSWER = myArray
+console.log(ANSWER);
 
 
 
